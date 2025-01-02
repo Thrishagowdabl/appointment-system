@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const baseUrl = 'http://localhost:3000';
 
-    // Add Patient
+   
     document.getElementById('add-patient-form').addEventListener('submit', async function(e) {
         e.preventDefault();
     
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
             console.log('Response from Backend:', result);
     
-            // Check if patientId is part of the response
+         
             if (response.ok && result.patientId) {
                 alert(`Patient added successfully. Patient ID: ${result.patientId}`);
             } else {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const result = await response.json();
             console.log('Response from Backend:', result);
     
-            // Handle the response from booking an appointment
+           
             if (response.ok) {
                 alert(result.message || 'Appointment booked successfully');
             } else {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Error: ' + error.message);
         }
     });
-    // View Financial Report
+    
     document.getElementById('view-report').addEventListener('click', async function() {
         try {
             const response = await fetch(`${baseUrl}/financial-report`);
@@ -85,21 +85,20 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Error: ' + error.message);
         }
     });
-    // Fetch and display the doctors
-// Fetch and display doctors
+   
 async function fetchDoctors() {
     try {
-        // Call the backend API to get doctors
-        const response = await fetch('http://localhost:3000/doctors'); // Adjust the URL if needed
+     
+        const response = await fetch('http://localhost:3000/doctors'); 
         if (response.ok) {
             const doctors = await response.json();
-            console.log('Doctors fetched:', doctors); // Debug log
+            console.log('Doctors fetched:', doctors); 
 
-            // Target the table body
+           
             const tableBody = document.querySelector('#doctors-table tbody');
-            tableBody.innerHTML = ''; // Clear any existing rows
+            tableBody.innerHTML = ''; 
 
-            // Append each doctor's details
+         
             doctors.forEach(doctor => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
@@ -117,7 +116,6 @@ async function fetchDoctors() {
     }
 }
 
-// Call the function on page load
 fetchDoctors();
 
 
