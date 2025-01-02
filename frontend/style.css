@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #22e9a6; /* Fallback color */
-    background-image: url('https://www.woodlandshospital.in/images/banner-opt2-new.jpg'); /* Background image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    background-color: #22e9a6; 
+    background-image: url('https://www.woodlandshospital.in/images/banner-opt2-new.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
 }
 h1 {
     text-align: center;
@@ -24,30 +24,30 @@ h4{
     
 }
 
-/* General styling for all form containers */
+
 .form-container {
     width: 300px;
     padding: 20px;
     margin: 20px;
-    border: 2px solid #ccc; /* Border around the form */
+    border: 2px solid #ccc; 
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-/* Align all form containers to the right */
+
 .form-container-wrapper {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin-right: 30px; /* Add some right margin */
+    margin-right: 30px;
 }
 
 input, button {
     margin: 10px 0;
     padding: 10px;
-    width: 100%; /* Make input fields fill the container */
+    width: 100%; 
 }
 
 button {
@@ -76,5 +76,5 @@ th, td {
 width: 50%;
 margin-top: 20px;
 color: rgb(14, 12, 12);
-text-align: right; /* Aligns content inside the table cells */
+text-align: right; 
 }
