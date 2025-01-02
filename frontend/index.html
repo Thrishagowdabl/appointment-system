@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Healthcare System</h1>
 
+    <!-- Form Container Wrapper for Right Alignment -->
+    <div class="form-container-wrapper">
+
+        <!-- Add Patient Form -->
+        <div class="form-container">
+            <h2>Add Patient</h2>
+            <form id="add-patient-form">
+                <input type="text" id="patient-name" placeholder="Enter Name" required>
+                <input type="email" id="patient-email" placeholder="Enter Email" required>
+                <input type="tel" id="patient-phone" placeholder="Enter Phone Number" required>
+                <input type="number" id="patient-wallet" placeholder="Enter Wallet Amount" required>
+                <button type="submit">Add Patient</button>
+            </form>
+        </div>
+
+        <!-- Book Appointment Form -->
+        <div class="form-container">
+            <h2>Book Appointment</h2>
+            <form id="book-appointment-form">
+                <input type="text" id="patient-id" placeholder="Enter Patient ID" required>
+                <input type="text" id="doctor-id" placeholder="Enter Doctor ID" required>
+                <input type="date" id="appointment-date" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+        <div class="form container">
+        <h2>Financial Report</h2>
+        <button id="view-report">view Financial Report</button>
+        
+        </div>
+        
+    </div>
+
+    </div>
+
+    <!-- Financial Report -->
+    <h3>Financial Report</h3>
+    <div class="form-container-wrapper">
+
+   
+    <div id="financial-report"></div>
+    </div>
+
+    <!-- Doctors List -->
+    <h4>Doctors List</h4>
+    <table id="doctors-table" border="1">
+        <thead>
+            <tr>
+                <th>Doctor ID</th>
+                <th>Name</th>
+                <th>Specialization</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Doctor details will be appended here -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
